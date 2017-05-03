@@ -8,13 +8,131 @@
     tools:context="ru.sunsurfers.sunapp.UserActivity"
     tools:showIn="@layout/app_bar_user">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <android.support.constraint.ConstraintLayout
+        android:background="@android:color/darker_gray"
+        android:layout_width="362dp"
+        android:layout_height="166dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.024"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/constraintLayout">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:text="Тут будет карта"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintVertical_bias="0.394"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="357dp"
+        android:layout_height="308dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.078"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:text="Some text"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <View
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:text="Some text"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <View
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:text="Some text"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <View
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:text="Some text"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <View
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:text="Some text"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <View
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
